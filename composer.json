@@ -1,0 +1,29 @@
+{
+    "name": "jellygnite/silverstripe-seo",
+    "description": "An all-in-one SEO module for SilverStripe.",
+    "type": "silverstripe-vendormodule",
+    "keywords": ["silverstripe", "seo", "facebook", "twitter", "opengraph", "search", "optimization", "optimisation"],
+    "license": "BSD-3-Clause",
+    "require": {
+      "silverstripe/cms": "^4.1",
+      "jonom/silverstripe-text-target-length": "^2",
+      "wilr/silverstripe-googlesitemaps": "^2.1",
+      "kub-at/php-simple-html-dom-parser": "^1.7",
+      "axllent/silverstripe-trailing-slash": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jellygnite\\Seo\\": "src/"
+        }
+    },
+    "extra": {
+        "expose": [
+            "client/dist"
+        ],
+        "branch-alias": {
+            "dev-master": "4.0-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

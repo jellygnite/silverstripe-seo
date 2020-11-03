@@ -1,0 +1,19 @@
+---
+Name: silverstripe-seo-controller
+---
+PageController:
+  extensions:
+    - Jellygnite\Seo\Extensions\PageControllerExtension
+---
+Name: silverstripe-seo
+---
+Page:
+  extensions:
+    - Jellygnite\Seo\Extensions\PageSeoExtension
+    - Jellygnite\Seo\Extensions\PageHealthExtension
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Jellygnite\Seo\Extensions\SiteConfigSettingsExtension
+SilverStripe\Security\Member:
+  extensions:
+    - Jellygnite\Seo\Extensions\MemberExtension
