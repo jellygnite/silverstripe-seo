@@ -6,9 +6,9 @@ An all-in-one SEO module for SilverStripe.
 
 ## Features
 
-* SEO Health Analysis in the Page Editor ![SEO Health Analysis](https://i.imgur.com/L2MTFDd.png)
-* Automatic Facebook OpenGraph meta-tag generation (can override) ![Facebook SEO Control](https://i.imgur.com/FcK0ExJ.png)
-* Automatic Twitter meta-tag generation (can override) ![Twitter SEO Control](https://i.imgur.com/7I4rnXw.png)
+* SEO Health Analysis in the Page Editor ![SEO Health Analysis]
+* Automatic Facebook OpenGraph meta-tag generation (can override) ![Facebook SEO Control]
+* Automatic Twitter meta-tag generation (can override) ![Twitter SEO Control]
     * Also adds a `TwitterAccountName` field to `SilverStripe\Security\Member` which is used for the creator tag. The creator is recorded when a new page is created and their Twitter account name will be used for the meta tag
 
 ### Example Meta Tags Output
