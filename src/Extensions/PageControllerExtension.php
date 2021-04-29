@@ -17,8 +17,8 @@ class PageControllerExtension extends Extension {
 		if($this->owner->dbObject('MetaTitle') && $this->owner->dbObject('MetaTitle')->getValue()){
 			return $this->owner->dbObject('MetaTitle')->getValue();
 		}
-		
-		return ( method_exists($this->owner, 'defaultMetaTitle') && $this->owner->defaultMetaTitle() ) ?: $this->owner->Title;
+		return ( $this->owner->hasMethod('defaultMetaTitle') && $this->owner->defaultMetaTitle() ) ? $this->owner->defaultMetaTitle() : $this->owner->Title;
     }
+
 
 }
