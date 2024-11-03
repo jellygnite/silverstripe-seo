@@ -17,7 +17,7 @@ class FocusKeywordUniqueAnalysis extends Analysis
      */
     public function getKeyword()
     {
-        return strtolower($this->getPage()->FocusKeyword);
+        return strtolower($this->getPage()->FocusKeyword ?? '');
     }
 
     /**

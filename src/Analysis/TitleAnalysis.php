@@ -74,11 +74,11 @@ class TitleAnalysis extends Analysis
             return static::TITLE_TOO_LONG;
         }
 
-        if ($keyword && !strstr(strtolower($title), strtolower($keyword))) {
+        if ($keyword && !strstr(strtolower($title ?? ''), strtolower($keyword ?? ''))) {
             return static::TITLE_NO_FOCUS_KEYWORD;
         }
 
-        if ($keyword && strtolower(substr($title, 0, strlen($keyword))) !== strtolower($keyword)) {
+        if ($keyword && strtolower(substr($title, 0, strlen($keyword)) ?? '') !== strtolower($keyword ?? '')) {
             return static::TITLE_FOCUS_KEYWORD_POSITION;
         }
 

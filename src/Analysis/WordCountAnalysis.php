@@ -20,7 +20,7 @@ class WordCountAnalysis extends Analysis
      */
     public function getWordCount()
     {
-        $content = strtolower(strip_tags($this->getContentFromDom()));	
+        $content = strtolower(strip_tags($this->getContentFromDom()) ?? '');	
 		return str_word_count($content);
 		//return count(array_filter(explode(' ', $content )));
     }
@@ -31,7 +31,7 @@ class WordCountAnalysis extends Analysis
 			
         $result = $dom->find(PageSeoExtension::config()->get('content_holder'), 0);
 
-        return strtolower(strip_tags($result ? $result->innertext() : ''));
+        return strtolower(strip_tags($result ? $result->innertext() : '') ?? '');
     }
 	
     /**

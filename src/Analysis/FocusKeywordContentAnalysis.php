@@ -43,7 +43,7 @@ class FocusKeywordContentAnalysis extends Analysis
     {
         $dom = $this->getPage()->getRenderedHtmlDomParser();
         $result = $dom->find(PageSeoExtension::config()->get('content_holder'), 0);
-        return strtolower(strip_tags($result ? $result->innertext() : ''));
+        return strtolower(strip_tags($result ? $result->innertext() : '')?? '');
     }
 
     /**
@@ -51,7 +51,7 @@ class FocusKeywordContentAnalysis extends Analysis
      */
     public function getKeyword()
     {
-        return strtolower($this->getPage()->FocusKeyword);
+        return strtolower($this->getPage()->FocusKeyword ?? '');
     }
 
     /**

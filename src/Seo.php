@@ -39,7 +39,7 @@ class Seo
 
         $content = implode(' ', $content);
 
-        return strtolower(strip_tags($content));
+        return strtolower(strip_tags($content)?? '');
     }
 
     /**

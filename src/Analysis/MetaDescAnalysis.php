@@ -74,7 +74,7 @@ class MetaDescAnalysis extends Analysis
             return static::META_DESC_TOO_LONG;
         }
 
-        if ($keyword && !strstr(strtolower($desc), strtolower($keyword))) {
+        if ($keyword && !strstr(strtolower($desc ?? ''), strtolower($keyword ?? ''))) {
             return static::META_DESC_NO_FOCUS_KEYWORD;
         }
 

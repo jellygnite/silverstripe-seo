@@ -5,11 +5,12 @@
     "keywords": ["silverstripe", "seo", "facebook", "twitter", "opengraph", "search", "optimization", "optimisation"],
     "license": "BSD-3-Clause",
     "require": {
-      "silverstripe/cms": "^4.1",
-      "jonom/silverstripe-text-target-length": "^2",
-      "wilr/silverstripe-googlesitemaps": "^2.1",
-      "kub-at/php-simple-html-dom-parser": "^1.7",
-      "axllent/silverstripe-trailing-slash": "^2.1"
+        "silverstripe/framework": "^5.0",
+        "silverstripe/admin": "^2.0",
+        "jonom/silverstripe-text-target-length": "^2",
+        "wilr/silverstripe-googlesitemaps": "^3.1",
+        "kub-at/php-simple-html-dom-parser": "^1.9",
+        "axllent/silverstripe-trailing-slash": "^2.2"
     },
     "autoload": {
         "psr-4": {
@@ -21,7 +22,7 @@
             "client/dist"
         ],
         "branch-alias": {
-            "dev-master": "4.0-dev"
+            "dev-master": "5.x-dev"
         }
     },
     "minimum-stability": "dev",
